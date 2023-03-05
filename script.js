@@ -11,6 +11,8 @@ let usedWrongLetters = [];
 let guess = document.getElementById('textBox').value;
 document.getElementById('letsPlayBtn').addEventListener('click', letsPlay);
 
+
+
 const textbox = document.getElementById('textBox'); // Replace 'myTextbox' with the ID of your textbox
 
 textbox.addEventListener('keyup', function (event) {
@@ -82,10 +84,10 @@ function nextGuess() {
     let hangPic = document.getElementById('hangImg');
     switch (numGuesses) {
         case 0:
-            hangPic.src = "hang7.png";
+            hangPic.src = "Hangman_website/hang7.png";
             break;
         case 1:
-            hangPic.src = "hang6.png";
+            hangPic.src = "Hangman_website/hang6.png";
             break;
         case 2:
             hangPic.src = "hang5.png";
