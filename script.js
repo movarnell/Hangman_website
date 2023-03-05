@@ -82,25 +82,25 @@ function nextGuess() {
     let hangPic = document.getElementById('hangImg');
     switch (numGuesses) {
         case 0:
-            hangPic.src = "img/hang7.png";
+            hangPic.src = "hang7.png";
             break;
         case 1:
-            hangPic.src = "img/hang6.png";
+            hangPic.src = "hang6.png";
             break;
         case 2:
-            hangPic.src = "img/hang5.png";
+            hangPic.src = "hang5.png";
             break;
         case 3:
-            hangPic.src = "img/hang4.png";
+            hangPic.src = "hang4.png";
             break;
         case 4:
-            hangPic.src = "img/hang3.png";
+            hangPic.src = "hang3.png";
             break;
         case 5:
-            hangPic.src = "img/hang2.png";
+            hangPic.src = "hang2.png";
             break;
         case 6:
-            hangPic.src = "img/hang1.png";
+            hangPic.src = "hang1.png";
             break;
     }
 }
