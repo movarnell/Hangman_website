@@ -13,7 +13,8 @@ document.getElementById('letsPlayBtn').addEventListener('click', letsPlay);
 
 
 
-const textbox = document.getElementById('textBox'); // Replace 'myTextbox' with the ID of your textbox
+
+const textbox = document.getElementById('textBox');
 
 textbox.addEventListener('keyup', function (event) {
     if (event.key === 'Enter') {
@@ -80,29 +81,30 @@ function nextGuess() {
         document.getElementById('instructions').innerText = "You can't guess more than 1 letter at a time, try again.";
         document.getElementById('textBox').value = "";
     }
+    document.getElementById('textBox').value = "";
 
     let hangPic = document.getElementById('hangImg');
     switch (numGuesses) {
         case 0:
-            hangPic.src = "hang7.png";
+            hangPic.src = "hang7.PNG";
             break;
         case 1:
-            hangPic.src = "hang6.png";
+            hangPic.src = "hang6.PNG";
             break;
         case 2:
-            hangPic.src = "hang5.png";
+            hangPic.src = "hang5.PNG";
             break;
         case 3:
-            hangPic.src = "hang4.png";
+            hangPic.src = "hang4.PNG";
             break;
         case 4:
-            hangPic.src = "hang3.png";
+            hangPic.src = "hang3.PNG";
             break;
         case 5:
-            hangPic.src = "hang2.png";
+            hangPic.src = "hang2.PNG";
             break;
         case 6:
-            hangPic.src = "hang1.png";
+            hangPic.src = "hang1.PNG";
             break;
     }
 }
