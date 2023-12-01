@@ -56,7 +56,8 @@ function nextGuess() {
         for (let i = 0; i < chosenWordArray.length; i++) {
             if (chosenWordArray[i] === guess) {
                 blankArray[i] = guess;
-                document.getElementById('blankArray').innerText = blankArray.join(" ");
+                document.getElementById("blankArray").innerText =
+                  blankArray.join("\xa0");
                 document.getElementById('textBox').value = "";
                 checkWinLoss();
 
@@ -72,7 +73,8 @@ function nextGuess() {
             usedWrongLetters.push(guess);
             document.getElementById('instructions').innerText = "Type in 1 letter and click Play to guess, your wrong letters will appear here: " + usedWrongLetters.join(" ");
             document.getElementById('textOutput').innerText = "You have: " + numGuesses + " wrong guesses left";
-            document.getElementById('blankArray').innerText = blankArray.join(" ");
+            document.getElementById("blankArray").innerText =
+              blankArray.join("\xa0");
             document.getElementById('textBox').value = "";
 
             checkWinLoss();
