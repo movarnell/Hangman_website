@@ -35,7 +35,7 @@ function createArray(chosenWord) {
             blankArray.push("_");
         } else { blankArray.push(" ") };
     }
-    document.getElementById('blankArray').innerText = blankArray.join("  ");
+    document.getElementById("blankArray").innerText = blankArray.join("\xa0");
 }
 
 function letsPlay() {
